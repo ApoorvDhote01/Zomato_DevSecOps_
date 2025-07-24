@@ -3,10 +3,10 @@ pipeline {
     agent any
     tools {
         jdk 'JDK17'
-        nodejs 'Node24'
+        nodejs 'node24'
     }
     environment {
-        SCANNER_HOME=tool 'Sonar-scanner'
+        SCANNER_HOME=tool 'sonar-scanner'
     }
     stages {
         stage ("clean workspace") {
